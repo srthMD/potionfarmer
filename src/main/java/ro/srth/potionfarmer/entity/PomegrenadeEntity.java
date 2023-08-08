@@ -51,6 +51,7 @@ public class PomegrenadeEntity extends Snowball {
     byte current = 0;
     @Override
     public void tick() {
+        super.tick();
         if(current <= 5){
             current = 0;
             this.level().addParticle(ParticleTypes.SMOKE, this.getX(), this.getY(), this.getZ(), 0.0D, 0.0D, 0.0D);
