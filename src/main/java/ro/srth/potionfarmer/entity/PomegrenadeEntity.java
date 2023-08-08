@@ -4,7 +4,7 @@ import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.LivingEntity;;
 import net.minecraft.world.entity.projectile.Snowball;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -44,17 +44,15 @@ public class PomegrenadeEntity extends Snowball {
     protected void onHit(HitResult pResult) {
         super.onHit(pResult);
         if (!this.level().isClientSide) {
-            this.level().explode(null, pResult.getLocation().x, pResult.getLocation().y, pResult.getLocation().z, 1f, Level.ExplosionInteraction.BLOCK);
+            this.level().explode(null, pResult.getLocation().x, pResult.getLocation().y, pResult.getLocation().z, 0.75f, Level.ExplosionInteraction.BLOCK);
         }
     }
 
-    byte current = 0;
     @Override
     public void tick() {
-        if(current <= 5){
-            current = 0;
+        super.tick();
+        if(this.level().isClientSide){
             this.level().addParticle(ParticleTypes.SMOKE, this.getX(), this.getY(), this.getZ(), 0.0D, 0.0D, 0.0D);
         }
-        current++;
     }
 }
