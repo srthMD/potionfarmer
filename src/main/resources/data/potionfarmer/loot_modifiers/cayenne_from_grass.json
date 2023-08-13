@@ -1,0 +1,10 @@
+{
+  "type": "potionfarmer:extra_rare_seed_modifier",
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:grass"
+    }
+  ],
+  "item": "potionfarmer:cayenne_seeds"
+}

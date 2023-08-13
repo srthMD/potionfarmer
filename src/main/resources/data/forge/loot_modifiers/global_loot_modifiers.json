@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "entries": [
+      "potionfarmer:bell_pepper_from_grass",
+      "potionfarmer:jalapeno_from_grass",
+      "potionfarmer:cayenne_from_grass",
+      "potionfarmer:orange_habanero_from_grass"
+  ]
+}

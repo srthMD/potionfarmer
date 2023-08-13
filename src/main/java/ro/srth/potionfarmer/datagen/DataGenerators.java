@@ -21,10 +21,14 @@ public class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        //generator.addProvider(event.includeServer(), new WorldGeneratorProvider(packOutput, lookupProvider));
         generator.addProvider(true, new BlockStateProvider(packOutput, existingFileHelper));
+        ModBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
+                new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
+        generator.addProvider(event.includeServer(), new ModItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
+
         generator.addProvider(true, new ItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(true, ModLootTableProvider.create(packOutput));
         generator.addProvider(true, new ModRecipeProvider(packOutput));
+        //generator.addProvider(event.includeServer(), new WorldGeneratorProvider(packOutput, lookupProvider));
     }
 }

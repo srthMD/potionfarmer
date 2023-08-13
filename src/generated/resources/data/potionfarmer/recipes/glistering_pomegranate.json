@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "forge:ingots/gold"
+    },
+    "N": {
+      "tag": "forge:nuggets/gold"
+    },
+    "P": {
+      "item": "potionfarmer:pomegranate"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "GPG",
+    "NNN"
+  ],
+  "result": {
+    "item": "potionfarmer:glistering_pomegranate"
+  },
+  "show_notification": true
+}

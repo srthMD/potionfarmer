@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "forge:ingots/iron"
+    },
+    "N": {
+      "tag": "forge:nuggets/iron"
+    },
+    "P": {
+      "item": "potionfarmer:parsnip"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "GPG",
+    "NNN"
+  ],
+  "result": {
+    "item": "potionfarmer:iron_parsnip"
+  },
+  "show_notification": true
+}

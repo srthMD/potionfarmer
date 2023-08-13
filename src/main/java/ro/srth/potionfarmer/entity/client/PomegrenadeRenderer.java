@@ -9,9 +9,12 @@ import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemDisplayContext;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import ro.srth.potionfarmer.Mod;
 import ro.srth.potionfarmer.entity.PomegrenadeEntity;
 
+@OnlyIn(Dist.CLIENT)
 public class PomegrenadeRenderer extends EntityRenderer<PomegrenadeEntity> {
     private static final float MIN_CAMERA_DISTANCE_SQUARED = 12.25F;
     private final ItemRenderer itemRenderer;

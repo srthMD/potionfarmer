@@ -9,6 +9,9 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.Tags;
+import net.minecraftforge.common.brewing.BrewingRecipe;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
+import net.minecraftforge.common.brewing.VanillaBrewingRecipe;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import ro.srth.potionfarmer.Mod;
 import ro.srth.potionfarmer.registry.ItemRegistry;
@@ -30,15 +33,47 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_pomegranate", inventoryTrigger(ItemPredicate.Builder.item().of(ItemRegistry.POMEGRANATE.get()).build()))
 
                 .define('G', Tags.Items.GUNPOWDER)
-                .define('P', ItemRegistry.POMEGRENADE.get())
+                .define('P', ItemRegistry.POMEGRANATE.get())
 
                 .pattern(" G ")
                 .pattern("GPG")
                 .pattern(" G ")
 
                 .save(consumer);
-        //end
 
+        //glistering pomegranate
+        ShapedRecipeBuilder.shaped(RecipeCategory.BREWING, ItemRegistry.GLISTERING_POMEGRANATE.get())
+                .unlockedBy("has_pomegranate", inventoryTrigger(ItemPredicate.Builder.item().of(ItemRegistry.POMEGRANATE.get()).build()))
+
+                .define('G', Tags.Items.INGOTS_GOLD)
+                .define('N', Tags.Items.NUGGETS_GOLD)
+                .define('P', ItemRegistry.POMEGRANATE.get())
+
+                .pattern("NNN")
+                .pattern("GPG")
+                .pattern("NNN")
+
+                .save(consumer);
+
+        //pomegranate seeds
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ItemRegistry.POMEGRANATE_SEEDS.get())
+                .unlockedBy("has_pomegranate", inventoryTrigger(ItemPredicate.Builder.item().of(ItemRegistry.POMEGRANATE.get()).build()))
+                .requires(ItemRegistry.POMEGRANATE.get())
+                .save(consumer);
+
+        //iron parsnip
+        ShapedRecipeBuilder.shaped(RecipeCategory.BREWING, ItemRegistry.IRON_PARSNIP.get())
+                .unlockedBy("has_parsnip", inventoryTrigger(ItemPredicate.Builder.item().of(ItemRegistry.PARSNIP.get()).build()))
+
+                .define('G', Tags.Items.INGOTS_IRON)
+                .define('N', Tags.Items.NUGGETS_IRON)
+                .define('P', ItemRegistry.PARSNIP.get())
+
+                .pattern("NNN")
+                .pattern("GPG")
+                .pattern("NNN")
+
+                .save(consumer);
 
     }
 

@@ -1,5 +1,56 @@
 {
   "item.potionfarmer.pomegranate": "Pomegranate",
+  "item.potionfarmer.glistering_pomegranate": "Glistering Pomegranate",
+  "item.potionfarmer.parsnip": "Parsnip",
+  "item.potionfarmer.iron_parsnip": "Iron Parsnip",
+  "item.potionfarmer.bell_pepper": "Bell Pepper",
+  "item.potionfarmer.jalapeno": "Jalapeno",
+  "item.potionfarmer.cayenne": "§cCayenne Pepper",
+  "item.potionfarmer.orange_habanero": "§6Orange Habanero",
 
-  "item.potionfarmer.pomegrenade": "Pomegrenade"
+  "item.potionfarmer.bell_pepper_seeds": "Bell Pepper Seeds",
+  "item.potionfarmer.jalapeno_seeds": "Jalapeno Seeds",
+  "item.potionfarmer.cayenne_seeds": "Cayenne Pepper Seeds",
+  "item.potionfarmer.orange_habanero_seeds": "Orange Habanero Seeds",
+  "item.potionfarmer.pomegranate_seeds": "Pomegranate Seeds",
+
+  "item.potionfarmer.pomegrenade": "Pomegrenade",
+
+  "item.minecraft.potion.effect.short_life_steal_potion": "Potion Of Life Steal",
+  "item.minecraft.potion.effect.long_life_steal_potion": "Potion Of Life Steal",
+  "item.minecraft.potion.effect.amplified_life_steal_potion": "Potion Of Life Steal",
+  "item.minecraft.splash_potion.effect.short_life_steal_potion": "Splash Potion Of Life Steal",
+  "item.minecraft.splash_potion.effect.long_life_steal_potion": "Splash Potion Of Life Steal",
+  "item.minecraft.splash_potion.effect.amplified_life_steal_potion": "Potion Of Life Steal",
+  "item.minecraft.lingering_potion.effect.short_life_steal_potion": "Lingering Potion Of Life Steal",
+  "item.minecraft.lingering_potion.effect.long_life_steal_potion": "Lingering Potion Of Life Steal",
+  "item.minecraft.lingering_potion.effect.amplified_life_steal_potion": "Lingering Potion Of Life Steal",
+  "item.minecraft.tipped_arrow.effect.short_life_steal_potion": "Tipped Arrow Of Life Steal",
+  "item.minecraft.tipped_arrow.effect.long_life_steal_potion": "Tipped Arrow Of Life Steal",
+  "item.minecraft.tipped_arrow.effect.amplified_life_steal_potion": "Tipped Arrow Of Life Steal",
+
+  "item.minecraft.potion.effect.short_resistance_potion": "Potion Of Resistance",
+  "item.minecraft.potion.effect.long_resistance_potion": "Potion Of Resistance",
+  "item.minecraft.potion.effect.amplified_resistance_potion": "Potion Of Resistance",
+  "item.minecraft.splash_potion.effect.short_resistance_potion": "Splash Potion Of Resistance",
+  "item.minecraft.splash_potion.effect.long_resistance_potion": "Splash Potion Of Resistance",
+  "item.minecraft.splash_potion.effect.amplified_resistance_potion": "Potion Of Resistance",
+  "item.minecraft.lingering_potion.effect.short_resistance_potion": "Lingering Potion Of Resistance",
+  "item.minecraft.lingering_potion.effect.long_resistance_potion": "Lingering Potion Of Resistance",
+  "item.minecraft.lingering_potion.effect.amplified_resistance_potion": "Lingering Potion Of Resistance",
+  "item.minecraft.tipped_arrow.effect.short_resistance_potion": "Tipped Arrow Of Resistance",
+  "item.minecraft.tipped_arrow.effect.long_resistance_potion": "Tipped Arrow Of Resistance",
+  "item.minecraft.tipped_arrow.effect.amplified_resistance_potion": "Tipped Arrow Of Resistance",
+
+  "item.minecraft.potion.effect.short_fire_resistance_potion": "Potion Of Fire Resistance",
+  "item.minecraft.potion.effect.long_fire_resistance_potion": "Potion Of Fire Resistance",
+  "item.minecraft.splash_potion.effect.short_fire_resistance_potion": "Splash Potion Of Fire Resistance",
+  "item.minecraft.splash_potion.effect.long_fire_resistance_potion": "Splash Potion Of Fire Resistance",
+  "item.minecraft.lingering_potion.effect.short_fire_resistance_potion": "Lingering Potion Of Fire Resistance",
+  "item.minecraft.lingering_potion.effect.long_fire_resistance_potion": "Lingering Potion Of Fire Resistance",
+  "item.minecraft.tipped_arrow.effect.short_fire_resistance_potion": "Tipped Arrow Of Fire Resistance",
+  "item.minecraft.tipped_arrow.effect.long_fire_resistance_potion": "Tipped Arrow Of Fire Resistance",
+
+  "effect.potionfarmer.life_steal": "Life Steal",
+  "effect.potionfarmer.spice_effect": "Spice"
 }

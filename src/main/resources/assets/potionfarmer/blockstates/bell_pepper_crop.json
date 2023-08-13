@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "potionfarmer:block/base_pepper_stage0"
+    },
+    "age=1": {
+      "model": "potionfarmer:block/base_pepper_stage0"
+    },
+    "age=2": {
+      "model": "potionfarmer:block/base_pepper_stage1"
+    },
+    "age=3": {
+      "model": "potionfarmer:block/base_pepper_stage1"
+    },
+    "age=4": {
+      "model": "potionfarmer:block/base_pepper_stage2"
+    },
+    "age=5": {
+      "model": "potionfarmer:block/base_pepper_stage2"
+    },
+    "age=6": {
+      "model": "potionfarmer:block/base_pepper_stage3"
+    },
+    "age=7": {
+      "model": "potionfarmer:block/bell_pepper_crop_stage4"
+    }
+  }
+}

@@ -12,7 +12,8 @@ public final class BlockStateProvider extends net.minecraftforge.client.model.ge
     }
 
     @Override
-    protected void registerStatesAndModels() {}
+    protected void registerStatesAndModels(){
+    }
 
     private void genBlock(RegistryObject<Block> obj){
        simpleBlockWithItem(obj.get(), cubeAll(obj.get()));

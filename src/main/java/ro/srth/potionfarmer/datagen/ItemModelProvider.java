@@ -19,6 +19,18 @@ public final class ItemModelProvider extends net.minecraftforge.client.model.gen
     protected void registerModels() {
         handheldItem(ItemRegistry.POMEGRANATE);
         handheldItem(ItemRegistry.POMEGRENADE);
+        handheldItem(ItemRegistry.GLISTERING_POMEGRANATE);
+        handheldItem(ItemRegistry.POMEGRANATE_SEEDS);
+        handheldItem(ItemRegistry.PARSNIP);
+        handheldItem(ItemRegistry.IRON_PARSNIP);
+        handheldItem(ItemRegistry.BELL_PEPPER);
+        handheldItem(ItemRegistry.CAYENNE);
+        handheldItem(ItemRegistry.JALAPENO);
+        handheldItem(ItemRegistry.ORANGE_HABANERO);
+        handheldItem(ItemRegistry.BELL_PEPPER_SEEDS);
+        handheldItem(ItemRegistry.JALAPENO_SEEDS);
+        handheldItem(ItemRegistry.CAYENNE_SEEDS);
+        handheldItem(ItemRegistry.ORANGE_HABANERO_SEEDS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> obj){

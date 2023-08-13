@@ -1,1 +1,7 @@
-// 1.20.1	2023-08-07T22:58:42.5760772	Loot Tables
+// 1.20.1	2023-08-11T12:46:13.6071566	Loot Tables
+fdf1a323df41c3072d55ceb8f410b434c609d93f data/potionfarmer/loot_tables/blocks/bell_pepper_crop.json
+8cb5e525a4dc51380f2da307cdc6ffac09d37f1a data/potionfarmer/loot_tables/blocks/cayenne_crop.json
+bb3e916efa3bcd2e4da26b5622c3af824358822f data/potionfarmer/loot_tables/blocks/jalapeno_crop.json
+899dc1a24936b8e7a3b87ed80f60d33e314d3c87 data/potionfarmer/loot_tables/blocks/orange_habanero_crop.json
+4ee85a69f52f4ebc06201fcc23a75fad6e67795d data/potionfarmer/loot_tables/blocks/parsnip_crop.json
+36943939ecdee5d1f0c25a5b4feb60e838636271 data/potionfarmer/loot_tables/blocks/pomegranate_shrub.json
