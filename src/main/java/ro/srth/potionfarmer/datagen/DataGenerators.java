@@ -29,6 +29,6 @@ public class DataGenerators {
         generator.addProvider(true, new ItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(true, ModLootTableProvider.create(packOutput));
         generator.addProvider(true, new ModRecipeProvider(packOutput));
-        //generator.addProvider(event.includeServer(), new WorldGeneratorProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new WorldGenProvider(packOutput, lookupProvider));
     }
 }

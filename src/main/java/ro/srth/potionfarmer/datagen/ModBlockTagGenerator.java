@@ -3,10 +3,15 @@ package ro.srth.potionfarmer.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.tags.TagsProvider;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
 import ro.srth.potionfarmer.Mod;
+import ro.srth.potionfarmer.registry.BlockRegistry;
+import ro.srth.potionfarmer.util.PotionFarmerTags;
 
 import java.util.concurrent.CompletableFuture;
 public class ModBlockTagGenerator extends BlockTagsProvider {
@@ -15,5 +20,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     }
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        this.tag(PotionFarmerTags.Blocks.CROPS)
+                .add(BlockRegistry.POMEGRANATE_SHRUB.get())
+                .add(BlockRegistry.BELL_PEPPER_CROP.get())
+                .add(BlockRegistry.JALAPENO_CROP.get())
+                .add(BlockRegistry.CAYENNE_CROP.get())
+                .add(BlockRegistry.ORANGE_HABANERO_CROP.get())
+                .add(BlockRegistry.PARSNIP_CROP.get())
+                .addTag(PotionFarmerTags.Blocks.CROPS);
     }
 }

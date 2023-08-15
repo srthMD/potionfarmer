@@ -75,6 +75,29 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
                 .save(consumer);
 
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ItemRegistry.BELL_PEPPER_SEEDS.get())
+                .unlockedBy("has_bell_pepper", inventoryTrigger(ItemPredicate.Builder.item().of(ItemRegistry.BELL_PEPPER.get()).build()))
+                .requires(ItemRegistry.BELL_PEPPER.get())
+                .save(consumer);
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ItemRegistry.JALAPENO_SEEDS.get())
+                .unlockedBy("has_jalapeno", inventoryTrigger(ItemPredicate.Builder.item().of(ItemRegistry.JALAPENO.get()).build()))
+                .requires(ItemRegistry.JALAPENO.get())
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ItemRegistry.CAYENNE_SEEDS.get())
+                .unlockedBy("has_cayenne", inventoryTrigger(ItemPredicate.Builder.item().of(ItemRegistry.CAYENNE.get()).build()))
+                .requires(ItemRegistry.CAYENNE.get())
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ItemRegistry.ORANGE_HABANERO_SEEDS.get())
+                .unlockedBy("has_orange_habanero", inventoryTrigger(ItemPredicate.Builder.item().of(ItemRegistry.ORANGE_HABANERO.get()).build()))
+                .requires(ItemRegistry.ORANGE_HABANERO.get())
+                .save(consumer);
+
+
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> p_250654_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {

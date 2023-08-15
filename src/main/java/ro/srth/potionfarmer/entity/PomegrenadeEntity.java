@@ -9,10 +9,13 @@ import net.minecraft.world.entity.item.PrimedTnt;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TippedArrowItem;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.HitResult;
+import ro.srth.potionfarmer.Mod;
 import ro.srth.potionfarmer.registry.EntityRegistry;
 import ro.srth.potionfarmer.registry.ItemRegistry;
+import ro.srth.potionfarmer.registry.PotionRegistry;
 
 ;
 

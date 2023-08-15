@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_plains",
+  "features": "potionfarmer:pomegranate_shrub_placed",
+  "step": "vegetal_decoration"
+}

@@ -6,9 +6,11 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 import ro.srth.potionfarmer.Mod;
+import ro.srth.potionfarmer.registry.BlockRegistry;
 import ro.srth.potionfarmer.registry.ItemRegistry;
 import ro.srth.potionfarmer.util.PotionFarmerTags;
 
@@ -32,7 +34,21 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ItemRegistry.ORANGE_HABANERO.get())
                 .add(ItemRegistry.JALAPENO.get())
                 .add(ItemRegistry.POMEGRANATE_SEEDS.get())
+                .add(ItemRegistry.ORANGE_HABANERO_SEEDS.get())
+                .add(ItemRegistry.CAYENNE_SEEDS.get())
+                .add(ItemRegistry.BELL_PEPPER_SEEDS.get())
+                .add(ItemRegistry.JALAPENO_SEEDS.get())
                 .addTag(PotionFarmerTags.Items.FOOD);
+
+        this.tag(Tags.Items.CROPS)
+                .add(ItemRegistry.POMEGRANATE.get())
+                .add(ItemRegistry.PARSNIP.get())
+                .add(ItemRegistry.IRON_PARSNIP.get())
+                .add(ItemRegistry.CAYENNE.get())
+                .add(ItemRegistry.BELL_PEPPER.get())
+                .add(ItemRegistry.ORANGE_HABANERO.get())
+                .add(ItemRegistry.JALAPENO.get())
+                .addTag(Tags.Items.CROPS);
 
         this.tag(PotionFarmerTags.Items.BREWABLES)
                 .add(ItemRegistry.GLISTERING_POMEGRANATE.get())

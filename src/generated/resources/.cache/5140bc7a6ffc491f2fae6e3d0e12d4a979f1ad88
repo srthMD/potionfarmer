@@ -1,5 +1,6 @@
-// 1.20.1	2023-08-10T13:57:45.5324415	Tags for minecraft:item mod id potionfarmer
+// 1.20.1	2023-08-14T10:24:18.7306606	Tags for minecraft:item mod id potionfarmer
+225d51c32d96a9a9aad6dfe4758eab5c799998bd data/forge/tags/items/crops.json
 ee355ec0b2e3248c4e8d3c8716df8a1248b6d3bf data/potionfarmer/tags/items/brewables.json
-f4aa5be42d5e0954e0c110ea8fa504c80d314ff8 data/potionfarmer/tags/items/food.json
+2af82d6fc173651db300e1dfad27536b5dae43bc data/potionfarmer/tags/items/food.json
 39cbec7f803ec4474c8d2567370c9c45382f8792 data/potionfarmer/tags/items/peppers.json
 7dda0359fcc6312564ad15f86c287ddfe3be78c0 data/potionfarmer/tags/items/seeds.json

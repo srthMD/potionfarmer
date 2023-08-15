@@ -12,7 +12,7 @@ public class PotionFarmerTags {
 
 
     public static class Blocks {
-        public static final TagKey<Block> POMEGRANATE_SHRUB = tag("pomegranate_shrub");
+        public static final TagKey<Block> CROPS = tag("crops");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(Mod.MOD_ID, name));
