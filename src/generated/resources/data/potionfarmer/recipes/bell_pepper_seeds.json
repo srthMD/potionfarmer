@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "potionfarmer:bell_pepper"
+    }
+  ],
+  "result": {
+    "item": "potionfarmer:bell_pepper_seeds"
+  }
+}
