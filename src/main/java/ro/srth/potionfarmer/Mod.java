@@ -2,7 +2,6 @@ package ro.srth.potionfarmer;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -60,7 +59,7 @@ public class Mod
             event.accept(ItemRegistry.ORANGE_HABANERO.get());
             event.accept(ItemRegistry.ORANGE_HABANERO_SEEDS.get());
         } else if (event.getTabKey() == CreativeModeTabs.SEARCH) {
-            ItemRegistry.Items.getEntries().forEach((item) -> {event.accept(item.get());});
+            ItemRegistry.Items.getEntries().forEach((item) -> event.accept(item.get()));
         }
     }
 }

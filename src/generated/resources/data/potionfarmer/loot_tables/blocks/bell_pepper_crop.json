@@ -10,8 +10,26 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "potionfarmer:bell_pepper"
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "potionfarmer:bell_pepper_crop",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "7"
+                  }
+                }
+              ],
+              "name": "potionfarmer:bell_pepper"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "potionfarmer:bell_pepper_seeds"
+            }
+          ]
         }
       ],
       "rolls": 1.0
@@ -47,5 +65,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/carrots"
+  "random_sequence": "potionfarmer:blocks/bell_pepper_crop"
 }

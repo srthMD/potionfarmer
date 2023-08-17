@@ -1,7 +1,5 @@
 package ro.srth.potionfarmer.registry;
 
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.registries.DeferredRegister;
@@ -9,7 +7,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import ro.srth.potionfarmer.Mod;
 import ro.srth.potionfarmer.item.Pomegrenade;
-import ro.srth.potionfarmer.item.properties.ModFoodProperties;
 import ro.srth.potionfarmer.item.properties.ModItemProperties;
 
 public class ItemRegistry {

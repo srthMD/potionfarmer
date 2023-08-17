@@ -14,6 +14,5 @@ public class JEIPotionFarmer implements IModPlugin {
     }
 
     @Override
-    public void registerCategories(IRecipeCategoryRegistration registration) {
-    }
+    public void registerCategories(IRecipeCategoryRegistration registration) {}
 }

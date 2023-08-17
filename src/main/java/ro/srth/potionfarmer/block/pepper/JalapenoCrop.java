@@ -34,11 +34,6 @@ public class JalapenoCrop extends CropBlock {
     }
 
     @Override
-    protected boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
-        return pState.is(Blocks.FARMLAND);
-    }
-
-    @Override
     public ItemStack getCloneItemStack(BlockGetter pLevel, BlockPos pPos, BlockState pState) {
         return new ItemStack(ItemRegistry.JALAPENO.get());
     }
@@ -47,7 +42,7 @@ public class JalapenoCrop extends CropBlock {
     public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
         int i = pState.getValue(AGE);
         if (i < 7 && pLevel.getRawBrightness(pPos.above(), 0) >= 9 && net.minecraftforge.common.ForgeHooks.onCropsGrowPre(pLevel, pPos, pState, pRandom.nextInt(5) == 0)) {
-            BlockState blockstate = pState.setValue(AGE, Integer.valueOf(i + 1));
+            BlockState blockstate = pState.setValue(AGE, i + 1);
             pLevel.setBlock(pPos, blockstate, 2);
             pLevel.gameEvent(GameEvent.BLOCK_CHANGE, pPos, GameEvent.Context.of(blockstate));
             net.minecraftforge.common.ForgeHooks.onCropsGrowPost(pLevel, pPos, pState);
@@ -67,7 +62,7 @@ public class JalapenoCrop extends CropBlock {
             int j = 1 + pLevel.random.nextInt(2);
             popResource(pLevel, pPos, new ItemStack(ItemRegistry.JALAPENO.get(), j + (flag ? 1 : 0)));
             pLevel.playSound((Player)null, pPos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + pLevel.random.nextFloat() * 0.4F);
-            BlockState blockstate = pState.setValue(AGE, Integer.valueOf(6));
+            BlockState blockstate = pState.setValue(AGE, 6);
             pLevel.setBlock(pPos, blockstate, 2);
             pLevel.gameEvent(GameEvent.BLOCK_CHANGE, pPos, GameEvent.Context.of(pPlayer, blockstate));
             return InteractionResult.sidedSuccess(pLevel.isClientSide);
@@ -81,7 +76,4 @@ public class JalapenoCrop extends CropBlock {
         pBuilder.add(AGE);
     }
 
-    public void performBonemeal(ServerLevel pLevel, RandomSource pRandom, BlockPos pPos, BlockState pState) {
-        this.growCrops(pLevel, pPos, pState);
-    }
 }

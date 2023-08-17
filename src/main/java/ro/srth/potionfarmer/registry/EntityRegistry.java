@@ -12,7 +12,7 @@ import ro.srth.potionfarmer.entity.PomegrenadeEntity;
 
 public class EntityRegistry {
 
-    public static RegistryObject<EntityType<PomegrenadeEntity>> POMEGRENADE;
+    public static final RegistryObject<EntityType<PomegrenadeEntity>> POMEGRENADE;
 
     public static final DeferredRegister<EntityType<?>> Entities = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Mod.MOD_ID);
 
