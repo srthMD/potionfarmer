@@ -6,7 +6,7 @@ plugins {
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
 
-version = '1.0'
+version = mod_version
 group = 'ro.srth.potionfarmer'
 
 base {
