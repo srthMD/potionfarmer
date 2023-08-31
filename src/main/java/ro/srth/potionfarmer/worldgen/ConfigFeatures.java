@@ -16,7 +16,6 @@ import ro.srth.potionfarmer.registry.BlockRegistry;
 
 public class  ConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> POMEGRANATE_KEY = registerKey("pomegranate_shrub");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> PARSNIP_KEY = registerKey("parsnip");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
          register(context, POMEGRANATE_KEY, Feature.FLOWER,

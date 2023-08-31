@@ -27,4 +27,7 @@ public class LootModifierRegistry {
     public static final RegistryObject<Codec<? extends IGlobalLootModifier>> LEGENDARY_SEED_MODIFIER =
             Modifiers.register("legendary_seed_modifier", LegendarySeedModifier.CODEC);
 
+    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> PARSNIP_MODIFIER =
+            Modifiers.register("parsnip_modifier", ParsnipModifier.CODEC);
+
 }
